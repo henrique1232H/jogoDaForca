@@ -8,6 +8,7 @@ export const checkLetters = () => {
 
     const h2Attemps = document.querySelector(".attemps");
     const span = document.querySelector(".letters");
+    const button = document.querySelector(".startGame")
 
     const textInsertSplit = state.textInsert.split("")
 
@@ -29,9 +30,10 @@ export const checkLetters = () => {
         
     }
 
-    if(state.attemps < 0) {
+    if(state.attemps <= 0) {
         state.attemps = 5;
-        h2Attemps.textContent = `Você tem 5 tentativas!`;
+        h2Attemps.textContent = `Que pena, não vou dessa vez!`;
+        button.textContent = "Recomeçar"
         form.classList.add("visibility");
         button.classList.remove("visibility");
 

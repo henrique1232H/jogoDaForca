@@ -10,11 +10,11 @@ export const start = () => {
 
     button.addEventListener("click", (e) => {
 
-        state.attemps = 5
-
         form.classList.remove('visibility');
         button.classList.add("visibility")
         h2Attemps.classList.remove("visibility")
+        
+        h2Attemps.textContent = `Você tem ${state.attemps} tentativas!`
 
         wordSelect()
         randomNumber();

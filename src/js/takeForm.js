@@ -15,8 +15,6 @@ export const takeForm = () => {
 
         state.textInsert = `${value}`;
 
-        state.timeout = setTimeout(() => {
-            checkLetters()
-        }, 50);
+        state.timeout = setTimeout(() => {checkLetters()}, 50);
     })
 }
