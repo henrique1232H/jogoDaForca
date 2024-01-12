@@ -1,8 +1,11 @@
-import { changeAttemps } from "./changeAttemps.js"
+
 import state from "./state.js"
 
+const form = document.querySelector("form")
 
 export const checkLetters = () => {
+
+    const h2Attemps = document.querySelector(".attemps")
 
     console.log(state.word)
 
@@ -11,10 +14,17 @@ export const checkLetters = () => {
     }
 
     if(state.word !== state.textInsert) {
-        changeAttemps()
+        state.attemps--
+        h2Attemps.textContent = `Você tem ${state.attemps} tentativas!`
+        
     }
 
-    console.log(state.attemps)
+    if(state.attemps === 0) {
+        state.attemps = 5;
+        form.classList.add("visibility")
+
+    }
+
     console.log(state.wordArray)
 
 }
