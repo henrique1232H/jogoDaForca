@@ -21,6 +21,6 @@ export default [
 
     {
         value: "Piracicaba",
-        tips: "É um município braileiro no interior de São Paulo"
+        tips: "É um município brasileiro no interior de São Paulo"
     }
 ]

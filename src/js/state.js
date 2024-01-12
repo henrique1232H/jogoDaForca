@@ -6,4 +6,5 @@ export default {
     wordArray: [],
     arraySpan: [],
     attempsBolean: true,
+    timeout: ""
 }
