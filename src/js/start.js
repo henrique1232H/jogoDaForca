@@ -17,7 +17,6 @@ export const start = () => {
         h2Attemps.textContent = `Você tem ${state.attemps} tentativas!`
 
         wordSelect()
-        randomNumber();
         removeSpanForWords();
         createSpanForWords();
     })

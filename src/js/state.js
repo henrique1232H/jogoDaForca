@@ -1,7 +1,7 @@
 export default {
     textInsert: "AA",
     word: "",
-    randomNumber: 4,
+    randomNumber: 0,
     attemps: 5,
     wordArray: [],
     arraySpan: [],
