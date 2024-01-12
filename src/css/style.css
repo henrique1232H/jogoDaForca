@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    font-size: 62.5%;
+
+    --bg-background: hsl(202, 100%, 46%);
+    --bg-secondBackground: hsl(173, 46%, 66%);
+    --bg-button: #000;
+    --icons-color: #FFf
+}
+
+
+
+body {
+    background-color: var(--bg-background);
+    background-image: linear-gradient(var(--bg-background) 0%, var(--bg-secondBackground)  100%);
+    height: 100vh;
+    background-size: 200% 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation:  moveBackground 5s ease-in infinite alternate;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.darkTheme {
+    --bg-background: hsl(0, 0%, 0%);
+    --bg-secondBackground: hsl(168, 11%, 54%);
+    --icons-color: #000;
+    --bg-button: #ffea00;
+
+
+}
+
+i {
+    color: var(--icons-color);
+    font-size: 2rem;
+}
+
+.buttonChangeTheme {
+    border: none;
+    background: var(--bg-button);
+    border: 1px solid var(--bg-secondBackground);
+    width: 10%;
+    height: 3rem;
+    border-radius: .5rem;
+}
+
+html:not(.darkTheme) .ph-moon,
+html.darkTheme .ph-sun {
+    display: none;
+}
+ 
+
+main {
+    height: auto;
+    width: min(42.8rem, 90%);
+    background: #fff;
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: .1rem -.1rem 2rem .5rem #000;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+
+
+section .hangman {
+    height: 20rem;
+    width: 100%;
+    border: 1px solid red;
+}
+
+section .letters {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sr-only {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.sectionDarkTheme {
+    width: 100%;
+    text-align: end;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    width: 100%;
+}
+
+
+@keyframes moveBackground {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
