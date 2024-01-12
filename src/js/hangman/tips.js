@@ -1,5 +1,5 @@
-import words from "./words.js"
-import state from "./state.js";
+import words from "../words.js"
+import state from "../state.js";
 
 export const tips = () => {
     const h2Tips = document.querySelector("h2");

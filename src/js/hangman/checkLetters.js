@@ -1,5 +1,5 @@
 
-import state from "./state.js"
+import state from "../state.js"
 
 const form = document.querySelector("form");
 const button = document.querySelector(".startGame")

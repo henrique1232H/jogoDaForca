@@ -1,5 +1,5 @@
 import { checkLetters } from "./checkLetters.js";
-import state from "./state.js"
+import state from "../state.js"
 const form = document.querySelector("form");
 
 

@@ -1,7 +1,7 @@
-import state from "./state.js";
+import state from "../state.js";
 import { takeForm } from "./takeForm.js";
 import { tips } from "./tips.js";
-import words from "./words.js";
+import words from "../words.js";
 
 export const wordSelect = () => {
 

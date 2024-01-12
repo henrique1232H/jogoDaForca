@@ -5,4 +5,4 @@ import { randomNumber } from "./randomNumber.js";
 
 randomNumber();
 darkTheme();
-start()
+start();

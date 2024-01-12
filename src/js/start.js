@@ -1,7 +1,6 @@
-import { createSpanForWords, removeSpanForWords } from "./createSpanForWords.js";
-import { randomNumber } from "./randomNumber.js"
+import { createSpanForWords, removeSpanForWords } from "./hangman/createSpanForWords.js";
 import state from "./state.js";
-import { wordSelect } from "./wordSelect.js"
+import { wordSelect } from "./hangman/wordSelect.js"
 
 export const start = () => {
     const button = document.querySelector(".startGame");
