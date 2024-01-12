@@ -1,5 +1,6 @@
 import { createSpanForWords, removeSpanForWords } from "./hangman/createSpanForWords.js";
 import state from "./state.js";
+import {randomNumber} from "./randomNumber.js"
 import { wordSelect } from "./hangman/wordSelect.js"
 
 export const start = () => {
@@ -18,6 +19,7 @@ export const start = () => {
         wordSelect()
         removeSpanForWords();
         createSpanForWords();
+        randomNumber()
     })
 
 }

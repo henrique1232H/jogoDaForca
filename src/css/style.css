@@ -127,6 +127,11 @@ form input {
 }
 
 
+.tips {
+    margin-top: 1rem;
+    letter-spacing: .2rem;
+}
+
 @keyframes moveBackground {
     0% {
         background-position: 100% 0%;

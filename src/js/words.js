@@ -22,5 +22,10 @@ export default [
     {
         value: "Piracicaba",
         tips: "É um município brasileiro no interior de São Paulo"
+    },
+
+    {
+        value: "Marvel",
+        tips: "Editora de quadrinhos."
     }
 ]

@@ -13,7 +13,10 @@ export const checkLetters = () => {
     const textInsertSplit = state.textInsert.split("")
 
     if(state.word === state.textInsert) {
-        alert("LO")
+        alert("Acertou")
+        button.classList.remove("visibility")
+        button.textContent = "Recomeçar"
+        form.classList.add("visibility");
     }
 
     if(state.word !== state.textInsert) {
