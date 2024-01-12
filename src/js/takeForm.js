@@ -1,6 +1,7 @@
-import { attemps } from "./attemps.js";
+import { attemps } from "./showAttemps.js";
 import { checkLetters } from "./checkLetters.js";
 import state from "./state.js"
+import { changeAttemps } from "./changeAttemps.js";
 
 const form = document.querySelector("form");
 
@@ -15,6 +16,5 @@ export const takeForm = () => {
         state.textInsert = `${value}`;
 
         checkLetters()
-    
     })
 }

@@ -1,4 +1,4 @@
-import { attemps } from "./attemps.js";
+import { attemps } from "./showAttemps.js";
 import state from "./state.js";
 import { takeForm } from "./takeForm.js";
 import { tips } from "./tips.js";

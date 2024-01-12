@@ -1,3 +1,4 @@
+import { changeAttemps } from "./changeAttemps.js"
 import state from "./state.js"
 
 
@@ -7,11 +8,10 @@ export const checkLetters = () => {
 
     if(state.word === state.textInsert) {
         alert("LO")
-        state.attempsBolean = true
     }
 
     if(state.word !== state.textInsert) {
-        state.attempsBolean = false
+        changeAttemps()
     }
 
     console.log(state.attemps)
