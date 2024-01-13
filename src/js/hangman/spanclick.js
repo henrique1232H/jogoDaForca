@@ -11,7 +11,6 @@ export const spanClick = () => {
 
 
     div.addEventListener("blur", () => {
-        console.log(state.arraySpan);
         const array = div.textContent.split("");
         div.innerHTML = "";
         createSpanForWords();

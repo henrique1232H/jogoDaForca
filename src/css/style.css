@@ -108,7 +108,15 @@ h1 {
 
 .sectionDarkTheme {
     width: 100%;
-    text-align: end;
+    display: flex;
+    place-content: end;
+}
+
+.sectionDarkTheme button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 form {
@@ -124,12 +132,48 @@ form {
 
 form input {
     width: 100%;
+    padding: 1rem;
+    border-radius: .5rem 0 0 .5rem;
 }
 
+form input, form button, .startGame {
+    border: none;
+    outline: none;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+
+form input:focus, form button:focus {
+    border: none;
+    outline: 1px solid hsl(202, 100%, 46%);
+}
+
+form button, .startGame {
+    padding: 1rem;
+    background: var(--bg-button);
+    color: var(--icons-color);
+}
+
+form button {
+    border-radius: 0 .5rem .5rem 0;
+}
+
+form button:hover {
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+}
 
 .tips {
     margin-top: 1rem;
     letter-spacing: .2rem;
+}
+
+.startGame {
+    border-radius: 1rem;
+}
+
+.startGame, form button, .buttonChangeTheme {
+    transition: background 250ms ease-in;
 }
 
 @keyframes moveBackground {
