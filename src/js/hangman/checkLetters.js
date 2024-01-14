@@ -19,23 +19,24 @@ export const checkLetters = () => {
 
     const textInsertSplit = state.textInsert.split("")
 
+    state.attemps--
+    
+    
     if(state.word === state.textInsert) {
         alert("Acertou")
+        state.attemps = 6;
         button.classList.remove("visibility")
         button.textContent = "Recomeçar"
         form.classList.add("visibility");
+        return;
     }
-
+    
     if(state.word !== state.textInsert) {
-        state.attemps--
-
         // for(let i = textInsertSplit; i < state.wordArray.length;i++) {
         //     if(textInsertSplit.includes([i]) === state.wordArray.includes([i])) {
         //         console.log("Existe esse", i)
         //     }
-  
         h2Attemps.textContent = `Você tem ${state.attemps} tentativas!`
-        
     }
 
 

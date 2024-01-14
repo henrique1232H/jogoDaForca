@@ -12,12 +12,13 @@ export const spanClick = () => {
 
     div.addEventListener("blur", () => {
         const array = div.textContent.split("");
-        div.innerHTML = "";
-        createSpanForWords();
-
-        if(array.length >  state.arraySpan.length) {
+        
+        if(array.length > state.arraySpan.length) {
             return;
         }
+        
+        div.innerHTML = "";
+        createSpanForWords();
         
 
     })
