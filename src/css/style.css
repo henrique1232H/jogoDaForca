@@ -173,6 +173,7 @@ form button:hover {
 
 .startGame {
     border-radius: 1rem;
+    width: 100%;
 }
 
 .startGame, form button, .buttonChangeTheme {
