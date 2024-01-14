@@ -42,9 +42,7 @@ export const checkLetters = () => {
     bodyOfHangman(hangmanArray)
 
     if(state.attemps <= 0) {
-
-
-        state.attemps = 5;
+        state.attemps = 6;
 
         removeSpanForWords()
         
