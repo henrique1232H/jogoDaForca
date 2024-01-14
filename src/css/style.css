@@ -80,7 +80,10 @@ main {
 section .hangman {
     height: 20rem;
     width: 100%;
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 section .letters {
@@ -175,6 +178,17 @@ form button:hover {
 .startGame, form button, .buttonChangeTheme {
     transition: background 250ms ease-in;
 }
+
+.ph-alien {
+    font-size: 3.5rem;
+    color: #000;
+}
+.hangman span {
+    color: #000;
+    font-size: 3.2rem;
+}
+
+
 
 @keyframes moveBackground {
     0% {
